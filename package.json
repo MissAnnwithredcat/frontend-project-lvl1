@@ -4,7 +4,7 @@
   "type": "module",
   "description": "my first project on Hexlet",
   "bin": {
-  "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/aspogorelova/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/aspogorelova/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/aspogorelova/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
