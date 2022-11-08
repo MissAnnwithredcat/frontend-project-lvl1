@@ -30,7 +30,7 @@ const askEvenNumber = () => {
         console.log('Correct!');
       } else {
         result = 'false';
-        console.log(`'${answerUser}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${nameUser}!`);
+        console.log(`'${answerUser}' is wrong answer ;(. Correct answer was 'yes'.`);
         break;
       }
     } else if (answerUser === 'no') {
@@ -38,9 +38,9 @@ const askEvenNumber = () => {
       console.log('Correct!');
     } else {
       result = 'false';
-      return `'${answerUser}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${nameUser}!`;
+      return `'${answerUser}' is wrong answer ;(. Correct answer was 'no'.`;
     }
   }
-  return (result === 'true') ? `Congratulations, ${nameUser}!` : `Let's try again, ${nameUser}!`;
+  return (result === 'true') ? console.log(`Congratulations, ${nameUser}!`) : console.log(`Let's try again, ${nameUser}!`);
 };
 export default askEvenNumber;
