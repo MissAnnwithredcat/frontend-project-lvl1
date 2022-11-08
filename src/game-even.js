@@ -1,17 +1,21 @@
 import readlineSync from 'readline-sync';
 
-export const askNameUser = () => readlineSync.question('May I have your name? ');
-const nameUser = askNameUser();
+const askNameUser = () => readlineSync.question('May I have your name? ');
 
 // Функция рандомного числа:
 const getRandomNumber = () => Math.floor(Math.random() * 10000);
 
-// Спрашиваем четность рандомного числа у Игрока 3 раза:
-export const askEvenNumber = () => {
+// ИГРА
+const askEvenNumber = () => {
+  // ПРИВЕТСТВИЕ
+  console.log('Welcome to the Brain Games!');
+  const nameUser = askNameUser();
+  console.log(`Hello, ${nameUser}`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let result = '';
 
+  // ЛОГИКА ИГРЫ
   for (let i = 0; i < 3; i += 1) {
     // Формируем рандомное число:
     const number = getRandomNumber();
@@ -26,7 +30,7 @@ export const askEvenNumber = () => {
         console.log('Correct!');
       } else {
         result = 'false';
-        console.log(`'${answerUser}' is wrong answer ;(. Correct answer was 'yes'.`);
+        console.log(`'${answerUser}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${nameUser}!`);
         break;
       }
     } else if (answerUser === 'no') {
@@ -34,8 +38,9 @@ export const askEvenNumber = () => {
       console.log('Correct!');
     } else {
       result = 'false';
-      return `'${answerUser}' is wrong answer ;(. Correct answer was 'no'.`;
+      return `'${answerUser}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${nameUser}!`;
     }
   }
   return (result === 'true') ? `Congratulations, ${nameUser}!` : `Let's try again, ${nameUser}!`;
 };
+export default askEvenNumber;
