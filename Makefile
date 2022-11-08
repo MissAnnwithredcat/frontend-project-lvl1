@@ -4,8 +4,11 @@ install:
 make brain-games:
 	node bin/brain-games.js
 
-make lint:
-    npx eslint .
+make game-even:
+	node bin/brain-even.js
+
+lint:
+	npx eslint .
 
 publish:
 	npm publish --dry-run
