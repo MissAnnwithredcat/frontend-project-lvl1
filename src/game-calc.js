@@ -10,7 +10,7 @@ const arr = ['+', '-', '*'];
 const getRandomOperator = () => Math.floor(Math.random() * 3);
 
 // ИГРА
-const askEvenNumber = () => {
+const solveEquation = () => {
   // ПРИВЕТСТВИЕ
   console.log('Welcome to the Brain Games!');
   const nameUser = askNameUser();
@@ -57,4 +57,4 @@ const askEvenNumber = () => {
   return (sum === 3) ? console.log(`Congratulations, ${nameUser}!`) : console.log(`Let's try again, ${nameUser}!`);
 };
 
-export default askEvenNumber;
+export default solveEquation;
