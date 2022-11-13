@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import solveEquation from '../src/game-calc.js';
+import solveEquation from '../src/games/game-calc.js';
 
 solveEquation();
