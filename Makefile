@@ -10,6 +10,9 @@ make game-even:
 make game-calc:
 	node bin/brain-calc.js
 
+make game-gcd:
+	node bin/brain-gcd.js
+
 lint:
 	npx eslint .
 
