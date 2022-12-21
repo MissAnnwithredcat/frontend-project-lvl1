@@ -16,6 +16,9 @@ make game-gcd:
 make game-progression:
 	node bin/brain-progression.js
 
+make game-prime:
+	node bin/brain-prime.js
+
 lint:
 	npx eslint .
 
