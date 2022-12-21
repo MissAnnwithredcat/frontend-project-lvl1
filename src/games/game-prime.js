@@ -5,7 +5,10 @@ const askPrimeNumber = () => {
   const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
   const taskNumber = () => {
-    const randomNumber = getRandomNumber();
+    let randomNumber = getRandomNumber();
+    if (randomNumber === 0) {
+      randomNumber = getRandomNumber();
+    }
     let answer = '';
 
     // Вычисляем число простое или нет
