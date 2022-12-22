@@ -25,8 +25,8 @@ const askProgression = () => {
     const randomPartOfProgress = getRandomNumber10();
     const freePlace = progression[randomPartOfProgress];
     answer = String(freePlace);
-    progression[randomPartOfProgress] = '...';
-    const randomTask = progression;
+    progression[randomPartOfProgress] = '..';
+    const randomTask = progression.join(' ');
     return [randomTask, answer];
   };
   engine(question, taskProgression);
