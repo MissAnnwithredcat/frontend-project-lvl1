@@ -1,11 +1,11 @@
 import engine from '../index.js';
-import { getRandomNumber } from '../random.js';
+import getRandomNumber from '../utils.js';
 
 const askPrimeNumber = () => {
   const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
   const taskNumber = () => {
-    const randomNumber = getRandomNumber();
+    const randomNumber = getRandomNumber(1, 100);
     let answer = '';
 
     // Вычисляем число простое или нет

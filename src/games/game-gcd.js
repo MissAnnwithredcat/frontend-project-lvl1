@@ -1,13 +1,13 @@
 import engine from '../index.js';
-import { getRandomNumber } from '../random.js';
+import getRandomNumber from '../utils.js';
 
 // ИГРА
 const askDivisor = () => {
   const question = 'Find the greatest common divisor of given numbers.';
 
   const taskNumber = () => {
-    const randomNumber1 = getRandomNumber();
-    const randomNumber2 = getRandomNumber();
+    const randomNumber1 = getRandomNumber(2, 100);
+    const randomNumber2 = getRandomNumber(2, 100);
     const randomTask = `${randomNumber1} ${randomNumber2}`;
     const number1 = (randomNumber1 > randomNumber2) ? randomNumber1 : randomNumber2;
     const number2 = (randomNumber1 > randomNumber2) ? randomNumber2 : randomNumber1;

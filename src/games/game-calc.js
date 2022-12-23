@@ -1,5 +1,5 @@
 import engine from '../index.js';
-import { getRandomNumber, getRandomOperator } from '../random.js';
+import getRandomNumber from '../utils.js';
 
 // ИГРА
 const solveEquation = () => {
@@ -8,10 +8,10 @@ const solveEquation = () => {
 
   // Формируем уравнение и определяем правильный ответ:
   const taskEquation = () => {
-    const randomNumber1 = getRandomNumber();
-    const randomNumber2 = getRandomNumber();
+    const randomNumber1 = getRandomNumber(1, 30);
+    const randomNumber2 = getRandomNumber(1, 30);
     const arr = ['+', '-', '*'];
-    const randomOperator = arr[getRandomOperator()];
+    const randomOperator = arr[getRandomNumber(1, 3)];
 
     const randomTask = `${randomNumber1} ${randomOperator} ${randomNumber2}`;
 

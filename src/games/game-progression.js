@@ -1,12 +1,12 @@
 import engine from '../index.js';
-import { getRandomNumber, getRandomNumber10 } from '../random.js';
+import getRandomNumber from '../utils.js';
 
 const askProgression = () => {
   const question = 'What number is missing in the progression?';
 
   const taskProgression = () => {
-    const start = getRandomNumber();
-    const step = getRandomNumber10();
+    const start = getRandomNumber(1, 100);
+    const step = getRandomNumber(1, 10);
     let answer = '';
 
     // Строим прогрессию
@@ -22,7 +22,7 @@ const askProgression = () => {
     const progression = getProgression(start, step);
 
     // Формируем прогрессию для Игрока
-    const randomPartOfProgress = getRandomNumber10();
+    const randomPartOfProgress = getRandomNumber(1, 10);
     const freePlace = progression[randomPartOfProgress];
     answer = String(freePlace);
     progression[randomPartOfProgress] = '..';

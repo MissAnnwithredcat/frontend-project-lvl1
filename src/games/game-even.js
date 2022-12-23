@@ -1,12 +1,12 @@
 import engine from '../index.js';
-import { getRandomNumber } from '../random.js';
+import getRandomNumber from '../utils.js';
 
 // ИГРА
 const askEvenNumber = () => {
   const question = 'Answer "yes" if the number is even, otherwise answer "no".';
 
   const taskNumber = () => {
-    const randomTask = getRandomNumber();
+    const randomTask = getRandomNumber(1, 100);
 
     // Определяем правильный ответ:
     let answer = '';
