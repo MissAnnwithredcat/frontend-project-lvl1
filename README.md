@@ -22,7 +22,7 @@
 <p>npm install</p>
 <p>npm link</p>
 
-<h2>Start game:<h2>
+<h2>Start game:</h2>
 
 <p>run name of game. For example, brain-calc.</p>
 
