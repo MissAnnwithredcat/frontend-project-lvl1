@@ -1,7 +1,6 @@
 import engine from '../index.js';
 import getRandomNumber from '../utils.js';
 
-// ИГРА
 const askDivisor = () => {
   const question = 'Find the greatest common divisor of given numbers.';
 
@@ -12,7 +11,6 @@ const askDivisor = () => {
     const number1 = (randomNumber1 > randomNumber2) ? randomNumber1 : randomNumber2;
     const number2 = (randomNumber1 > randomNumber2) ? randomNumber2 : randomNumber1;
 
-    // Определяем правильный ответ:
     let answer;
     const getMostBigDivider = (dividend, divider) => {
       let num1 = dividend;

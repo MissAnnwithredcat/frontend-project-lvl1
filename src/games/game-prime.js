@@ -8,7 +8,6 @@ const askPrimeNumber = () => {
     const randomNumber = getRandomNumber(1, 100);
     let answer = '';
 
-    // Вычисляем число простое или нет
     const isPrimeNumber = (number) => {
       for (let i = 2; i <= Math.sqrt(number); i += 1) {
         if (number % i === 0) {
