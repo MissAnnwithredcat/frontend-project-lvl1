@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const askPrimeNumber = () => {
@@ -20,7 +20,7 @@ const askPrimeNumber = () => {
     answer = isPrimeNumber(randomNumber);
     return [randomNumber, answer];
   };
-  engine(question, taskNumber);
+  runGame(question, taskNumber);
 };
 
 export default askPrimeNumber;

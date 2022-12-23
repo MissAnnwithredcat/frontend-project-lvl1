@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const askDivisor = () => {
@@ -30,6 +30,6 @@ const askDivisor = () => {
     return [randomTask, answer];
   };
 
-  engine(question, taskNumber);
+  runGame(question, taskNumber);
 };
 export default askDivisor;

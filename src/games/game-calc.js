@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const solveEquation = () => {
@@ -26,7 +26,7 @@ const solveEquation = () => {
     return [randomTask, answer];
   };
 
-  engine(question, taskEquation);
+  runGame(question, taskEquation);
 };
 
 export default solveEquation;

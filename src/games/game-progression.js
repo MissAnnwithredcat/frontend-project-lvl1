@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const askProgression = () => {
@@ -27,7 +27,7 @@ const askProgression = () => {
     const randomTask = progression.join(' ');
     return [randomTask, answer];
   };
-  engine(question, taskProgression);
+  runGame(question, taskProgression);
 };
 
 export default askProgression;
