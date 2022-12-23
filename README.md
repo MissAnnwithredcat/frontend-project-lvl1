@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/MissAnnwithredcat/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/MissAnnwithredcat/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/aspogorelova/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/f1ef7b3c0b56583a57cf/maintainability" /></a>
 
-<h1>Name project: Brain games</h1>
+<h1>Brain games</h1>
 
 <h2>Description</h2>
 <p>Brain games include several simple math games:</p>
@@ -18,13 +18,13 @@
 
 <h2>Installation:</h2> 
 
-<p><strong>git clone git@github.com:aspogorelova/frontend-project-lvl1.git</strong></p>
-<p><strong>npm install</strong></p>
-<p><strong>npm link</strong></p>
+<p>git clone git@github.com:aspogorelova/frontend-project-lvl1.git</p>
+<p>npm install</p>
+<p>npm link</p>
 
 <h2>Start game:<h2>
 
-<p><strong>run name of game. For example, brain-calc.</strong></p>
+<p>run name of game. For example, brain-calc.</p>
 
 <h2>For example</h2>
 
