@@ -11,19 +11,16 @@ const runGame = (question, randomTask) => {
   const timesRound = 3;
 
   for (let i = 0; i < timesRound; i += 1) {
-    const answer = randomTask();
-    const task = answer[0];
+    const [task, answer] = randomTask();
     console.log(`Question: ${task}`);
 
     const answerUser = readlineSync.question('Your answer: ');
 
-    const trueAnswer = answer[1];
-
-    if (trueAnswer === answerUser) {
+    if (answer === answerUser) {
       counter += 1;
       console.log('Correct!');
     } else {
-      console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${trueAnswer}'.`);
+      console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${answer}'.`);
       break;
     }
   }
