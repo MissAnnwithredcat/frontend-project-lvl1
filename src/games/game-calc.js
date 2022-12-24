@@ -12,17 +12,17 @@ const solveEquation = () => {
 
     const randomTask = `${randomNumber1} ${randomOperator} ${randomNumber2}`;
 
-    let answer = '';
-    switch (randomOperator) {
-      case '+': answer = randomNumber1 + randomNumber2;
-        break;
-      case '-': answer = randomNumber1 - randomNumber2;
-        break;
-      case '*': answer = randomNumber1 * randomNumber2;
-        break;
-      default: answer = null;
-    }
-    answer = String(answer);
+    const calcAnswer = (operator, number1, number2) => {
+      switch (operator) {
+        case '+': return String(number1 + number2);
+        case '-': return String(number1 - number2);
+        case '*': return String(number1 * number2);
+        default: throw new Error(`Unknown operator: '${randomOperator}'`);
+      }
+    };
+
+    const answer = calcAnswer(randomOperator, randomNumber1, randomNumber2);
+
     return [randomTask, answer];
   };
 
