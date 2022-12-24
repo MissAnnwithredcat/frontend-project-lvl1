@@ -7,12 +7,9 @@ const askEvenNumber = () => {
   const taskNumber = () => {
     const randomTask = getRandomNumber(1, 100);
 
-    let answer = '';
-    if (randomTask % 2 === 0) {
-      answer = 'yes';
-    } else {
-      answer = 'no';
-    }
+    const isEven = (number) => number % 2 === 0;
+    const answer = isEven(randomTask) ? 'yes' : 'no';
+
     return [randomTask, answer];
   };
 
