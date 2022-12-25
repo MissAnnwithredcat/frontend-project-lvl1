@@ -1,6 +1,15 @@
 import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
+const calcAnswer = (operator, number1, number2) => {
+  switch (operator) {
+    case '+': return String(number1 + number2);
+    case '-': return String(number1 - number2);
+    case '*': return String(number1 * number2);
+    default: throw new Error(`Unknown operator: '${operator}'`);
+  }
+};
+
 const solveEquation = () => {
   const question = 'What is the result of the expression?';
 
@@ -11,15 +20,6 @@ const solveEquation = () => {
     const randomOperator = arr[getRandomNumber(1, 3)];
 
     const randomTask = `${randomNumber1} ${randomOperator} ${randomNumber2}`;
-
-    const calcAnswer = (operator, number1, number2) => {
-      switch (operator) {
-        case '+': return String(number1 + number2);
-        case '-': return String(number1 - number2);
-        case '*': return String(number1 * number2);
-        default: throw new Error(`Unknown operator: '${randomOperator}'`);
-      }
-    };
 
     const answer = calcAnswer(randomOperator, randomNumber1, randomNumber2);
 

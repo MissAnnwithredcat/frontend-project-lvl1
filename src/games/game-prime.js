@@ -1,13 +1,16 @@
 import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const isPrimeNumber = (number) => {
-  for (let i = 2; i <= Math.sqrt(number); i += 1) {
-    if (number % i === 0) {
-      return 'no';
+const hasDivider = (num) => {
+  const arrDivider = [];
+  const firstDivider = 2;
+  for (let i = firstDivider; i <= Math.sqrt(num); i += 1) {
+    if (num % i === 0) {
+      arrDivider.push(i);
     }
   }
-  return 'yes';
+
+  return arrDivider.length === 0;
 };
 
 const askPrimeNumber = () => {
@@ -15,9 +18,8 @@ const askPrimeNumber = () => {
 
   const taskNumber = () => {
     const randomNumber = getRandomNumber(2, 100);
-    let answer = '';
 
-    answer = isPrimeNumber(randomNumber);
+    const answer = hasDivider(randomNumber) ? 'yes' : 'no';
     return [randomNumber, answer];
   };
   runGame(question, taskNumber);

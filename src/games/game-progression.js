@@ -17,13 +17,11 @@ const askProgression = () => {
     const start = getRandomNumber(1, 100);
     const step = getRandomNumber(1, 10);
     const length = 10;
-    let answer = '';
 
     const progression = getProgression(start, step, length);
 
     const randomPartOfProgress = getRandomNumber(1, 10);
-    const freePlace = progression[randomPartOfProgress];
-    answer = String(freePlace);
+    const answer = String(progression[randomPartOfProgress]);
     progression[randomPartOfProgress] = '..';
     const randomTask = progression.join(' ');
     return [randomTask, answer];
