@@ -7,11 +7,11 @@ const askEvenNumber = () => {
   const question = 'Answer "yes" if the number is even, otherwise answer "no".';
 
   const taskNumber = () => {
-    const randomTask = getRandomNumber(1, 100);
+    const task = getRandomNumber(1, 100);
 
-    const answer = isEven(randomTask) ? 'yes' : 'no';
+    const correctAnswer = isEven(task) ? 'yes' : 'no';
 
-    return [randomTask, answer];
+    return [task, correctAnswer];
   };
 
   runGame(question, taskNumber);
