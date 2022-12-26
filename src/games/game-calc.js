@@ -1,16 +1,16 @@
 import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const calcAnswer = (operator, number1, number2) => {
+const calcExpression = (operator, number1, number2) => {
   switch (operator) {
-    case '+': return String(number1 + number2);
-    case '-': return String(number1 - number2);
-    case '*': return String(number1 * number2);
+    case '+': return number1 + number2;
+    case '-': return number1 - number2;
+    case '*': return number1 * number2;
     default: throw new Error(`Unknown operator: '${operator}'`);
   }
 };
 
-const solveEquation = () => {
+const calcEquation = () => {
   const question = 'What is the result of the expression?';
 
   const taskEquation = () => {
@@ -19,14 +19,14 @@ const solveEquation = () => {
     const arr = ['+', '-', '*'];
     const randomOperator = arr[getRandomNumber(1, 3)];
 
-    const randomTask = `${randomNumber1} ${randomOperator} ${randomNumber2}`;
+    const task = `${randomNumber1} ${randomOperator} ${randomNumber2}`;
 
-    const answer = calcAnswer(randomOperator, randomNumber1, randomNumber2);
+    const correctAnswer = String(calcExpression(randomOperator, randomNumber1, randomNumber2));
 
-    return [randomTask, answer];
+    return [task, correctAnswer];
   };
 
   runGame(question, taskEquation);
 };
 
-export default solveEquation;
+export default calcEquation;
