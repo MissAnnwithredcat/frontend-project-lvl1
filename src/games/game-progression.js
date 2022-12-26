@@ -21,10 +21,10 @@ const askProgression = () => {
     const progression = getProgression(start, step, length);
 
     const randomPartOfProgress = getRandomNumber(1, 10);
-    const answer = String(progression[randomPartOfProgress]);
+    const correctAnswer = String(progression[randomPartOfProgress]);
     progression[randomPartOfProgress] = '..';
-    const randomTask = progression.join(' ');
-    return [randomTask, answer];
+    const task = progression.join(' ');
+    return [task, correctAnswer];
   };
   runGame(question, taskProgression);
 };
