@@ -1,7 +1,11 @@
 import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const hasDivider = (num) => {
+const isPrime = (num) => {
+  if (num === 1 || num === 0) {
+    return Error(`${num} is not a prime or a composite number. Please, try again.`);
+  }
+
   const arrDivider = [];
   const firstDivider = 2;
   for (let i = firstDivider; i <= Math.sqrt(num); i += 1) {
@@ -17,10 +21,10 @@ const askPrimeNumber = () => {
   const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
   const taskNumber = () => {
-    const randomNumber = getRandomNumber(2, 100);
+    const task = getRandomNumber(2, 100);
 
-    const answer = hasDivider(randomNumber) ? 'yes' : 'no';
-    return [randomNumber, answer];
+    const correctAnswer = isPrime(task) ? 'yes' : 'no';
+    return [task, correctAnswer];
   };
   runGame(question, taskNumber);
 };
