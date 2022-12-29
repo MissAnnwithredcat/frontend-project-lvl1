@@ -2,8 +2,8 @@ import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const isPrime = (num) => {
-  if (num === 1 || num === 0) {
-    return Error(`${num} is not a prime or a composite number. Please, try again.`);
+  if (num < 2) {
+    return false;
   }
 
   const arrDivider = [];
