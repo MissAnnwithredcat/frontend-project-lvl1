@@ -2,24 +2,10 @@ import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const getGCD = (dividend, divider) => {
-  let num1 = dividend;
-  let num2 = divider;
-  if (num1 === 0 || num1 === 1) {
-    return Error(`${num1} is not a prime or a composite number. Please, try again.`);
+  if (divider === 0) {
+    return Math.abs(dividend);
   }
-  if (num2 === 0) {
-    return Error(`${num2} can't divide by zero. Please, try again.`);
-  }
-
-  let result = num1 % num2;
-  if (result === 0) {
-    result = num2;
-  } else {
-    num1 = num2;
-    num2 = result;
-    result = getGCD(num1, num2);
-  }
-  return result;
+  return getGCD(divider, dividend % divider);
 };
 
 const askDivisor = () => {
