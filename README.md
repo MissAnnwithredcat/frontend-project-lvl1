@@ -29,19 +29,19 @@
 <h2>For example</h2>
 
 <p><strong><a href="https://asciinema.org/a/RiQ3lA6B4w283NSjT7wWK6orV">Brain-even</a></strong></p>
-<p><a href="https://asciinema.org/a/RiQ3lA6B4w283NSjT7wWK6orV"><img src="/image/brain-even.jpg"></a></p>
+<p><a href="https://asciinema.org/a/RiQ3lA6B4w283NSjT7wWK6orV"></a></p>
 <br>
 <p><strong><a href="https://asciinema.org/a/azlchg0xpJThjQTuDj77K4CCH">Brain-calc</a></strong></p>
-<p><a href="https://asciinema.org/a/azlchg0xpJThjQTuDj77K4CCH"><img src="/image/brain-calc.jpg"></a></p>
+<p><a href="https://asciinema.org/a/azlchg0xpJThjQTuDj77K4CCH"></a></p>
 <br>
 <p><strong><a href="https://asciinema.org/a/2dIUMB82UFnvryuV3DJHoyI4h">Brain-gcd</a></strong></p>
-<p><a href="https://asciinema.org/a/2dIUMB82UFnvryuV3DJHoyI4h"><img src="/image/brain-gcd.jpg"></a></p>
+<p><a href="https://asciinema.org/a/2dIUMB82UFnvryuV3DJHoyI4h"></a></p>
 <br>
 <p><strong><a href="https://asciinema.org/a/2dIUMB82UFnvryuV3DJHoyI4h">Brain-gcd</a></strong></p>
 <p><a href="https://asciinema.org/a/2dIUMB82UFnvryuV3DJHoyI4h"><img src="/image/brain-gcd.jpg"></a></p>
 <br>
 <p><strong><a href="https://asciinema.org/a/bNKU4FjJshnJyuxuAdTgvb8C5">Brain-progression</a></strong></p>
-<p><a href="https://asciinema.org/a/bNKU4FjJshnJyuxuAdTgvb8C5"><img src="/image/brain-progression.jpg"></a></p>
+<p><a href="https://asciinema.org/a/bNKU4FjJshnJyuxuAdTgvb8C5"></a></p>
 <br>
 <p><strong><a href="https://asciinema.org/a/QduGPxyCCGJ8GO9AK8OlFt6ZU">Brain-prime</a></strong></p>
-<p><a href="https://asciinema.org/a/QduGPxyCCGJ8GO9AK8OlFt6ZU"><img src="/image/brain-prime.jpg"></a></p>
+<p><a href="https://asciinema.org/a/QduGPxyCCGJ8GO9AK8OlFt6ZU"></a></p>
